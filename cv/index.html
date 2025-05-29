@@ -61,7 +61,14 @@
     <div class="container mt-5 text-center">
         <h1 class="post-title">Curriculum Vitae</h1>
         <p>You can download my CV by clicking the button below.</p>
-        <a href="../assets/pdf/CV_AnVo.pdf" target="_blank" class="btn btn-primary">
+        <a href="../assets/pdf/CV_AnVo.pdf" 
+        target="_blank" 
+        class="btn btn-primary"
+        onclick="gtag('event', 'download', {
+            'event_category': 'CV',
+            'event_label': 'CV_AnVo.pdf',
+            'value': 1
+        });">
             <i class="fa-solid fa-file-pdf"></i> Download CV (PDF)
         </a>
     </div>
