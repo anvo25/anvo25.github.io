@@ -2,13 +2,18 @@
    CUSTOM ENHANCEMENTS - ACADEMIC STYLE
    =================================== */
 
+
 /* Global Smooth Animations */
+
 * {
     transition: all 0.3s ease;
 }
 
+
 /* Ensure all links are blue, not purple */
-a, a:visited {
+
+a,
+a:visited {
     color: #007bff;
 }
 
@@ -16,14 +21,18 @@ a:hover {
     color: #0056b3;
 }
 
+
 /* Improved Body Typography */
+
 body {
     font-size: 16px;
     line-height: 1.7;
     letter-spacing: 0.01em;
 }
 
+
 /* Enhanced Navigation Bar - Bright Mode Only */
+
 #navbar {
     backdrop-filter: blur(10px);
     background-color: rgba(255, 255, 255, 0.98) !important;
@@ -68,7 +77,9 @@ body {
     width: 80%;
 }
 
+
 /* Enhanced Header Section */
+
 .post-header {
     padding: 2rem 0;
     margin-bottom: 2.5rem;
@@ -94,11 +105,17 @@ body {
     line-height: 1.6;
 }
 
+
 /* Profile Header Section - Merged Layout */
+
 .profile-header-section {
     margin-bottom: 2rem;
-    padding-bottom: 2rem;
-    border-bottom: 2px solid #f0f0f0;
+    padding: 3rem;
+    border-bottom: none;
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 25px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+    backdrop-filter: blur(10px);
 }
 
 .profile-header-section .profile {
@@ -136,7 +153,9 @@ body {
     margin-bottom: 1.5rem;
 }
 
+
 /* Contact Icons Enhancement */
+
 .contact-icons {
     display: flex;
     gap: 1rem;
@@ -169,7 +188,9 @@ body {
     box-shadow: 0 5px 15px rgba(0, 123, 255, 0.3);
 }
 
+
 /* Article Content Enhancement */
+
 article {
     padding: 2rem 0;
 }
@@ -197,7 +218,9 @@ article a:hover {
     border-bottom-color: #0056b3;
 }
 
+
 /* News Section Enhancement */
+
 h2 {
     font-size: 2rem;
     font-weight: 700;
@@ -269,7 +292,9 @@ h2:hover::after {
     font-weight: 600;
 }
 
+
 /* Publications Section Enhancement */
+
 .publications {
     margin-top: 2rem;
 }
@@ -347,7 +372,9 @@ h2:hover::after {
     border-radius: 4px;
 }
 
+
 /* Button Enhancements */
+
 .btn {
     border-radius: 8px;
     padding: 0.5rem 1.2rem;
@@ -384,7 +411,9 @@ h2:hover::after {
     flex-wrap: wrap;
 }
 
+
 /* Progress Bar Enhancement */
+
 #progress {
     position: fixed;
     top: 0;
@@ -401,7 +430,9 @@ h2:hover::after {
     box-shadow: 0 0 10px rgba(0, 123, 255, 0.5);
 }
 
+
 /* Footer Enhancement */
+
 footer {
     background: #f8f9fa;
     padding: 1.5rem 0;
@@ -422,13 +453,17 @@ footer a:hover {
     text-decoration: underline;
 }
 
+
 /* Hide Theme Toggle Button */
+
 #light-toggle,
 .toggle-container {
     display: none !important;
 }
 
+
 /* Scrollbar Enhancement */
+
 ::-webkit-scrollbar {
     width: 10px;
 }
@@ -446,42 +481,43 @@ footer a:hover {
     background: linear-gradient(135deg, #0056b3 0%, #004085 100%);
 }
 
+
 /* Container Enhancement */
+
 .container {
     max-width: 1200px;
     padding: 0 2rem;
 }
 
+
 /* Responsive Design */
+
 @media (max-width: 768px) {
     .post-title {
         font-size: 2rem;
     }
-
     h2 {
         font-size: 1.6rem;
     }
-
     .contact-icons a {
         font-size: 1.5rem;
         width: 45px;
         height: 45px;
     }
-
     .bibliography li {
         padding: 1rem;
     }
-
     .bibliography .title {
         font-size: 1.05rem;
     }
-
     .profile img {
         margin-bottom: 1.5rem;
     }
 }
 
+
 /* Animation Keyframes */
+
 @keyframes fadeInUp {
     from {
         opacity: 0;
@@ -500,13 +536,17 @@ article p {
     animation: fadeInUp 0.6s ease-out;
 }
 
+
 /* Highlight Enhancement */
+
 ::selection {
     background: rgba(0, 123, 255, 0.2);
     color: inherit;
 }
 
+
 /* CV Page Specific Enhancements */
+
 .text-center h1 {
     margin-bottom: 1.5rem;
     animation: fadeInUp 0.6s ease-out;
@@ -527,32 +567,208 @@ article p {
     margin-right: 0.5rem;
 }
 
+
 /* Force Light Mode - Override any dark mode preferences */
+
 body {
-    background-color: #ffffff !important;
+    background: #ffffff !important;
     color: #333333 !important;
+    position: relative;
+}
+
+
+/* Animated gradient background only for hero section */
+
+body::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 680px;
+    background: linear-gradient(135deg, #ffecd2, #fcb69f, #ffc3a0, #ffafbd);
+    background-size: 400% 400%;
+    animation: gradientShift 15s ease infinite;
+    z-index: -1;
+    pointer-events: none;
+}
+
+/* Floating animated shapes on the background */
+.floating-shapes {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 680px;
+    z-index: -1;
+    pointer-events: none;
+    overflow: hidden;
+}
+
+.floating-shapes .shape {
+    position: absolute;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    backdrop-filter: blur(2px);
+}
+
+.floating-shapes .shape:nth-child(1) {
+    width: 80px;
+    height: 80px;
+    top: 10%;
+    left: 10%;
+    animation: float1 20s ease-in-out infinite;
+}
+
+.floating-shapes .shape:nth-child(2) {
+    width: 120px;
+    height: 120px;
+    top: 60%;
+    left: 80%;
+    animation: float2 25s ease-in-out infinite;
+}
+
+.floating-shapes .shape:nth-child(3) {
+    width: 60px;
+    height: 60px;
+    top: 30%;
+    left: 70%;
+    animation: float3 18s ease-in-out infinite;
+}
+
+.floating-shapes .shape:nth-child(4) {
+    width: 100px;
+    height: 100px;
+    top: 70%;
+    left: 20%;
+    animation: float4 22s ease-in-out infinite;
+}
+
+.floating-shapes .shape:nth-child(5) {
+    width: 90px;
+    height: 90px;
+    top: 40%;
+    left: 50%;
+    animation: float5 19s ease-in-out infinite;
+}
+
+.floating-shapes .shape:nth-child(6) {
+    width: 70px;
+    height: 70px;
+    top: 15%;
+    left: 40%;
+    animation: float6 24s ease-in-out infinite;
+}
+
+@keyframes gradientShift {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+@keyframes float1 {
+    0%, 100% {
+        transform: translate(0, 0) scale(1);
+    }
+    25% {
+        transform: translate(30px, -40px) scale(1.1);
+    }
+    50% {
+        transform: translate(-20px, -80px) scale(0.9);
+    }
+    75% {
+        transform: translate(50px, -40px) scale(1.05);
+    }
+}
+
+@keyframes float2 {
+    0%, 100% {
+        transform: translate(0, 0) scale(1);
+    }
+    33% {
+        transform: translate(-60px, 50px) scale(1.15);
+    }
+    66% {
+        transform: translate(-90px, -30px) scale(0.85);
+    }
+}
+
+@keyframes float3 {
+    0%, 100% {
+        transform: translate(0, 0) rotate(0deg);
+    }
+    25% {
+        transform: translate(40px, 60px) rotate(90deg);
+    }
+    50% {
+        transform: translate(20px, 120px) rotate(180deg);
+    }
+    75% {
+        transform: translate(-30px, 60px) rotate(270deg);
+    }
+}
+
+@keyframes float4 {
+    0%, 100% {
+        transform: translate(0, 0) scale(1);
+    }
+    30% {
+        transform: translate(70px, -60px) scale(1.2);
+    }
+    60% {
+        transform: translate(30px, 40px) scale(0.8);
+    }
+}
+
+@keyframes float5 {
+    0%, 100% {
+        transform: translate(0, 0) scale(1) rotate(0deg);
+    }
+    50% {
+        transform: translate(-80px, -70px) scale(1.1) rotate(180deg);
+    }
+}
+
+@keyframes float6 {
+    0%, 100% {
+        transform: translate(0, 0) scale(1);
+    }
+    20% {
+        transform: translate(-40px, 50px) scale(1.15);
+    }
+    40% {
+        transform: translate(20px, 90px) scale(0.9);
+    }
+    60% {
+        transform: translate(60px, 60px) scale(1.1);
+    }
+    80% {
+        transform: translate(10px, 30px) scale(0.95);
+    }
 }
 
 @media (prefers-color-scheme: dark) {
     body {
-        background-color: #ffffff !important;
+        background: #ffffff !important;
         color: #333333 !important;
     }
-
     #navbar {
         background-color: rgba(255, 255, 255, 0.98) !important;
     }
-
     .news {
         background: #f8f9fa !important;
         color: #333 !important;
     }
-
     .bibliography li {
         background: #ffffff !important;
         color: #333 !important;
     }
-
     article p,
     .desc,
     .title,
@@ -562,12 +778,16 @@ body {
     }
 }
 
+
 /* Improved Spacing */
+
 .mt-5 {
     margin-top: 4rem !important;
 }
 
+
 /* Loading Animation */
+
 body::before {
     content: '';
     position: fixed;
@@ -582,7 +802,9 @@ body::before {
     transition: opacity 0.5s ease;
 }
 
+
 /* Professional Card Style for Key Sections */
+
 .highlights-section {
     background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
     border-radius: 15px;
