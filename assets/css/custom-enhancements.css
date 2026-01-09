@@ -91,10 +91,7 @@ body {
     font-size: 2.8rem;
     font-weight: 700;
     margin-bottom: 1rem;
-    background: linear-gradient(135deg, #1a1a1a 0%, #4a4a4a 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+    color: #1a1a1a !important;
     transition: all 0.3s ease;
 }
 
