@@ -7,6 +7,15 @@
     transition: all 0.3s ease;
 }
 
+/* Ensure all links are blue, not purple */
+a, a:visited {
+    color: #007bff;
+}
+
+a:hover {
+    color: #0056b3;
+}
+
 /* Improved Body Typography */
 body {
     font-size: 16px;
@@ -85,30 +94,46 @@ body {
     line-height: 1.6;
 }
 
-/* Profile Section Enhancement */
-.profile {
-    padding: 1rem;
-    transition: transform 0.3s ease;
+/* Profile Header Section - Merged Layout */
+.profile-header-section {
+    margin-bottom: 2rem;
+    padding-bottom: 2rem;
+    border-bottom: 2px solid #f0f0f0;
 }
 
-.profile:hover {
-    transform: translateY(-5px);
+.profile-header-section .profile {
+    padding: 0;
+    margin-left: 2rem;
+    margin-bottom: 1rem;
+    max-width: 280px;
 }
 
-.profile figure {
-    margin: 0;
+.profile-header-section .profile figure {
+    margin: 0 0 1rem 0;
     padding: 0;
 }
 
-.profile img {
+.profile-header-section .profile img {
     border-radius: 15px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
     transition: all 0.4s ease;
 }
 
-.profile img:hover {
+.profile-header-section .profile img:hover {
     box-shadow: 0 15px 45px rgba(0, 0, 0, 0.25);
     transform: scale(1.02);
+}
+
+.profile-header-section .bio-content {
+    overflow: hidden;
+}
+
+.profile-header-section .post-title {
+    margin-bottom: 0.5rem;
+}
+
+.profile-header-section .desc {
+    margin-bottom: 1.5rem;
 }
 
 /* Contact Icons Enhancement */
@@ -116,7 +141,11 @@ body {
     display: flex;
     gap: 1rem;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: flex-start;
+}
+
+.profile-header-section .contact-icons {
+    justify-content: flex-start;
 }
 
 .contact-icons a {
@@ -157,6 +186,10 @@ article a {
     text-decoration: none;
     border-bottom: 1px solid transparent;
     transition: all 0.3s ease;
+}
+
+article a:visited {
+    color: #007bff;
 }
 
 article a:hover {
