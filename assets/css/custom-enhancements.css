@@ -3,6 +3,15 @@
    =================================== */
 
 
+/* Force readable text even if dark theme is active */
+html[data-theme=dark] {
+    --global-bg-color: #ffffff;
+    --global-card-bg-color: #ffffff;
+    --global-text-color: #111111;
+    --global-text-color-light: #666666;
+    --global-divider-color: rgba(0, 0, 0, 0.1);
+}
+
 /* Global Smooth Animations */
 
 * {
@@ -27,6 +36,7 @@ a:hover {
 body {
     font-size: 16px;
     line-height: 1.7;
+    color: #111;
     letter-spacing: 0.01em;
 }
 
@@ -287,6 +297,14 @@ h2:hover::after {
     color: #007bff;
     font-style: normal;
     font-weight: 600;
+}
+
+.news,
+.news table,
+.news table th,
+.news table td,
+.news p {
+    color: #111;
 }
 
 
