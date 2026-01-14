@@ -395,20 +395,20 @@
         <div class="media-coverage">
             <div class="row">
                 <div class="col-md-4">
-                    <blockquote class="twitter-tweet">
+                    <blockquote class="twitter-tweet" data-dnt="true" data-theme="light">
                         <a href="https://twitter.com/giffmana/status/1953931117708669217">View on X</a>
                     </blockquote>
                 </div>
 
                 <div class="col-md-4">
-                    <blockquote class="twitter-tweet">
+                    <blockquote class="twitter-tweet" data-dnt="true" data-theme="light">
                         <a href="https://twitter.com/googleaidevs/status/1996973083467333736">View on X</a>
                     </blockquote>
                 </div>
 
 
                 <div class="col-md-4">
-                    <blockquote class="twitter-tweet">
+                    <blockquote class="twitter-tweet" data-dnt="true" data-theme="light">
                         <a href="https://twitter.com/GaryMarcus/status/1954326325126430982">View on X</a>
                     </blockquote>
                 </div>
@@ -416,17 +416,17 @@
             <div class="row">
 
                 <div class="col-md-4">
-                    <blockquote class="twitter-tweet">
+                    <blockquote class="twitter-tweet" data-dnt="true" data-theme="light">
                         <a href="https://twitter.com/yoavgo/status/1954084063892885674">View on X</a>
                     </blockquote>
                 </div>
                 <div class="col-md-4">
-                    <blockquote class="twitter-tweet">
+                    <blockquote class="twitter-tweet" data-dnt="true" data-theme="light">
                         <a href="https://twitter.com/Cohere_Labs/status/1944932457184391442">View on X</a>
                     </blockquote>
                 </div>
                 <div class="col-md-4">
-                    <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:share:7360208443477045248" height="600" width="100%" frameborder="0" allowfullscreen="" title="Embedded post" style="max-width: 504px;"></iframe>
+                    <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:share:7360208443477045248" height="600" width="100%" frameborder="0" allowfullscreen="" title="Embedded post" style="max-width: 504px;" loading="lazy"></iframe>
                 </div>
             </div>
         </div>
@@ -464,13 +464,54 @@
     <script defer src="/assets/js/jupyter_new_tab.js?d9f17b6adc2311cbabd747f4538bb15f "></script>
     <script async src="https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js "></script>
     <script async src="https://badge.dimensions.ai/badge.js "></script>
-    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
     <script>
-        window.addEventListener('load', function() {
-            if (window.twttr && window.twttr.widgets) {
-                window.twttr.widgets.load();
-            }
-        });
+        // Preconnect to Twitter domains for faster loading
+        (function() {
+            var preconnect = document.createElement('link');
+            preconnect.rel = 'preconnect';
+            preconnect.href = 'https://platform.twitter.com';
+            document.head.appendChild(preconnect);
+
+            var preconnect2 = document.createElement('link');
+            preconnect2.rel = 'preconnect';
+            preconnect2.href = 'https://pbs.twimg.com';
+            document.head.appendChild(preconnect2);
+        })();
+
+        // Load Twitter widget script with better timing
+        window.twttrLoaded = false;
+        function loadTwitterWidget() {
+            if (window.twttrLoaded) return;
+            window.twttrLoaded = true;
+
+            var script = document.createElement('script');
+            script.async = true;
+            script.src = 'https://platform.twitter.com/widgets.js';
+            script.charset = 'utf-8';
+            document.body.appendChild(script);
+        }
+
+        // Use Intersection Observer to load tweets when visible
+        if ('IntersectionObserver' in window) {
+            var observer = new IntersectionObserver(function(entries) {
+                entries.forEach(function(entry) {
+                    if (entry.isIntersecting) {
+                        loadTwitterWidget();
+                        observer.disconnect();
+                    }
+                });
+            }, { rootMargin: '200px' });
+
+            window.addEventListener('DOMContentLoaded', function() {
+                var mediaSection = document.querySelector('.media-coverage');
+                if (mediaSection) {
+                    observer.observe(mediaSection);
+                }
+            });
+        } else {
+            // Fallback for older browsers
+            window.addEventListener('load', loadTwitterWidget);
+        }
     </script>
     <script defer type="text/javascript " id="MathJax-script " src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-mml-chtml.js " integrity="sha256-MASABpB4tYktI2Oitl4t+78w/lyA+D7b/s9GEP0JOGI=" crossorigin=" anonymous "></script>
     <script src="/assets/js/mathjax-setup.js?a5bb4e6a542c546dd929b24b8b236dfd "></script>
