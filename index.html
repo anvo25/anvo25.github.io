@@ -448,7 +448,7 @@
     </div>
     </div>
     <footer role="contentinfo " style="padding: 20px 0; text-align: center;">
-        <div class="container mt-0" style="font-size: 0.85rem; color: #666;"> © Copyright 2025 An Vo. Powered by <a href="https://jekyllrb.com/ " target="_blank " rel="external nofollow noopener ">Jekyll</a> and <a href="https://claude.ai" target="_blank" rel="external nofollow noopener">Claude Sonnet</a>. </div>
+        <div class="container mt-0" style="font-size: 0.85rem; color: #666;"> © Copyright 2026 An Vo. Powered by <a href="https://jekyllrb.com/ " target="_blank " rel="external nofollow noopener ">Jekyll</a> and <a href="https://claude.ai" target="_blank" rel="external nofollow noopener">Claude Sonnet</a>. </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js " integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin=" anonymous "></script>
     <script src="/assets/js/bootstrap.bundle.min.js "></script>
@@ -480,6 +480,7 @@
 
         // Load Twitter widget script with better timing
         window.twttrLoaded = false;
+
         function loadTwitterWidget() {
             if (window.twttrLoaded) return;
             window.twttrLoaded = true;
@@ -500,7 +501,9 @@
                         observer.disconnect();
                     }
                 });
-            }, { rootMargin: '200px' });
+            }, {
+                rootMargin: '200px'
+            });
 
             window.addEventListener('DOMContentLoaded', function() {
                 var mediaSection = document.querySelector('.media-coverage');

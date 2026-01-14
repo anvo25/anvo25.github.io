@@ -454,7 +454,8 @@ footer {
     font-size: 0.9rem;
     color: #6c757d;
     border-top: 1px solid #e9ecef;
-    margin-top: 4rem;
+    margin-top: auto;
+    flex-shrink: 0;
 }
 
 footer a {
@@ -502,6 +503,10 @@ footer a:hover {
 .container {
     max-width: 1200px;
     padding: 0 2rem;
+}
+
+.container[role="main"] {
+    flex: 1 0 auto;
 }
 
 
@@ -585,10 +590,17 @@ article p {
 
 /* Force Light Mode - Override any dark mode preferences */
 
+html {
+    height: 100%;
+}
+
 body {
     background: #ffffff !important;
     color: #333333 !important;
     position: relative;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
 
