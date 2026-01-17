@@ -533,6 +533,47 @@ footer a:hover {
     .profile img {
         margin-bottom: 1.5rem;
     }
+
+    /* Mobile profile section - stack vertically */
+    .profile-header-section {
+        padding: 1.5rem;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .profile-header-section .profile,
+    .profile-header-section .profile.float-right {
+        float: none !important;
+        margin: 0 auto 1.5rem auto !important;
+        max-width: 180px;
+        text-align: center;
+        order: -1; /* Move image to top */
+    }
+
+    .profile-header-section .profile figure {
+        margin: 0 auto;
+    }
+
+    .profile-header-section .bio-content {
+        text-align: center;
+        width: 100%;
+    }
+
+    .profile-header-section .contact-icons {
+        justify-content: center;
+    }
+
+    .profile-header-section .desc {
+        text-align: center;
+    }
+
+    .profile-header-section p {
+        text-align: left;
+    }
+
+    .clearfix {
+        display: none;
+    }
 }
 
 
