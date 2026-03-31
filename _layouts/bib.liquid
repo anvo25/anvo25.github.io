@@ -40,6 +40,10 @@
             alt=entry.preview
           %}
         {% endif %}
+      {% else %}
+        <div class="preview-placeholder rounded d-flex align-items-center justify-content-center">
+          <i class="fa-regular fa-file-lines fa-2x" style="opacity: 0.2;"></i>
+        </div>
       {% endif %}
     </div>
   {% endif %}
@@ -198,14 +202,11 @@
       {% if entry.arxiv %}
         <a href="http://arxiv.org/abs/{{ entry.arxiv }}" class="btn btn-sm z-depth-0" role="button">arXiv</a>
       {% endif %}
-      {% if entry.bibtex_show %}
-        <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a>
-      {% endif %}
       {% if entry.html %}
         {% if entry.html contains '://' %}
-          <a href="{{ entry.html }}" class="btn btn-sm z-depth-0" role="button">HTML</a>
+          <a href="{{ entry.html }}" class="btn btn-sm z-depth-0" role="button">Paper</a>
         {% else %}
-          <a href="{{ entry.html | prepend: '/assets/html/' | relative_url }}" class="btn btn-sm z-depth-0" role="button">HTML</a>
+          <a href="{{ entry.html | prepend: '/assets/html/' | relative_url }}" class="btn btn-sm z-depth-0" role="button">Paper</a>
         {% endif %}
       {% endif %}
       {% if entry.pdf %}
@@ -249,6 +250,9 @@
       {% endif %}
       {% if entry.website %}
         <a href="{{ entry.website }}" class="btn btn-sm z-depth-0" role="button">Website</a>
+      {% endif %}
+      {% if entry.dataset %}
+        <a href="{{ entry.dataset }}" class="btn btn-sm z-depth-0" role="button">Dataset</a>
       {% endif %}
     </div>
     {% if site.enable_publication_badges %}
@@ -350,14 +354,6 @@
       </div>
     {% endif %}
 
-    {% if entry.bibtex_show %}
-      <!-- Hidden bibtex block -->
-      <div class="bibtex hidden">
-        {% highlight bibtex %}
-        {{- entry.bibtex | hideCustomBibtex -}}
-        {% endhighlight %}
-      </div>
-    {% endif %}
 
     {% if entry.video and site.enable_video_embedding %}
       <!-- Hidden video block -->
