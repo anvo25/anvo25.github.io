@@ -6,7 +6,6 @@ subtitle: >
   Research Engineer @ <a href="https://mbzuai.ac.ae/" target="_blank">Mohamed bin Zayed University of Artificial Intelligence (MBZUAI)</a>
   <br>
   Incoming PhD student in Computer Science and Engineering @ <a href="https://umich.edu/" target="_blank">University of Michigan</a>
-  
 
 profile:
   align: right

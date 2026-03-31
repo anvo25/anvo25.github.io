@@ -7,13 +7,13 @@ nav: false
 nav_order: 5
 ---
 
-*Feel free to use any of the bios below for conference introductions, press pieces, or speaker profiles.*
+_Feel free to use any of the bios below for conference introductions, press pieces, or speaker profiles._
 
 ---
 
 ## Concise Bio (1 sentence)
 
-An Vo is a Research Engineer at MBZUAI working on trustworthy Large Language Models and Vision Language Models, and lead author of *VLMs are Biased* (ICLR 2026).
+An Vo is a Research Engineer at MBZUAI working on trustworthy Large Language Models and Vision Language Models, and lead author of _VLMs are Biased_ (ICLR 2026).
 
 ---
 
