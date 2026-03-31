@@ -40,7 +40,7 @@ _styles: >
 
 ---
 
-## articles & Blog Posts
+## articles & blog posts
 
 - **Gary Marcus** [GPT-5: Overdue, overhyped and underwhelming](https://garymarcus.substack.com/p/gpt-5-overdue-overhyped-and-underwhelming), cites VLMs are Biased as key evidence for current model limitations.
 - **Hacker News** [Front page](https://news.ycombinator.com/item?id=44169413), community discussion of the VLMBias benchmark.
