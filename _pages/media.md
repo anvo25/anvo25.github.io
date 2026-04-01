@@ -20,7 +20,18 @@ _styles: >
   }
   .social-sidebar h2 { font-size: 1.4em; margin-bottom: 1rem; }
   .social-sidebar blockquote, .social-sidebar iframe { margin-bottom: 1.5rem !important; }
-  @media (max-width: 1300px) { .social-sidebar { display: none; } }
+  @media (max-width: 1300px) {
+    .social-sidebar {
+      position: static;
+      width: 100%;
+      max-height: none;
+      border-left: none;
+      border-top: 2px solid var(--global-divider-color, #eee);
+      padding-left: 0;
+      padding-top: 1rem;
+      margin-top: 2rem;
+    }
+  }
 ---
 
 ## news coverage
@@ -73,7 +84,7 @@ I had a meaningful and memorable life in Vietnam before going abroad. These are 
 ---
 
 <div class="social-sidebar">
-  <h2>Social Media</h2>
+  <h2>social media</h2>
   <blockquote class="twitter-tweet" data-dnt="true" data-theme="light">
     <p lang="en" dir="ltr">Oh wow, this VLM benchmark is pure evil, and I love it!</p>
     &mdash; Lucas Beyer (b|16) (@giffmana) <a href="https://twitter.com/giffmana/status/1953931117708669217">August 9, 2025</a>
