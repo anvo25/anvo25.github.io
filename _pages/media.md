@@ -55,7 +55,10 @@ _styles: >
 
 - **Gary Marcus** [GPT-5: Overdue, overhyped and underwhelming](https://garymarcus.substack.com/p/gpt-5-overdue-overhyped-and-underwhelming), cites VLMs are Biased as key evidence for current model limitations.
 - **Hacker News** [Front page](https://news.ycombinator.com/item?id=44169413), community discussion of the VLMBias benchmark.
-- **LinkedIn** [Post by Alex](https://www.linkedin.com/feed/update/urn:li:share:7360208443477045248), highlights VLMs are Biased findings on model failures in counterfactual visual reasoning.
+- **LinkedIn** [Post by Alex](https://www.linkedin.com/feed/update/urn:li:share:7360208443477045248), highlights [VLMs are Biased](https://vlmsarebiased.github.io) findings on model failures in counterfactual visual reasoning.
+- **Moondream** used examples from [VLMs are Biased](https://vlmsarebiased.github.io) to test the Moondream model in their [2025-06-21 release blog post](https://moondream.ai/blog/moondream-2025-06-21-release).
+
+  <img src="/assets/img/moondream example.png" alt="Moondream using VLMs are Biased examples" style="max-width: 100%; margin-top: 0.5rem; border-radius: 6px;">
 
 ---
 
