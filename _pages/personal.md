@@ -8,13 +8,13 @@ nav_order: 6
 
 <h2>a name</h2>
 
-My full Vietnamese name is **Võ Khánh An**. Vietnamese names are written family name first, so Võ is my family name and An is my given name. The name was a spontaneous thought of my father's during a naming discussion with my mother. But *An* does carry meaning: it means _peaceful_ in Vietnamese.
+My full Vietnamese name is **Võ Khánh An**. Vietnamese names are written family name first, so Võ is my family name and An is my given name. The name was a spontaneous thought of my father's during a naming discussion with my mother. That said, *An* does carry meaning: it means _peaceful_ in Vietnamese.
 
 <hr>
 
 <h2>places i have been</h2>
 
-_Sai Gon_ and _Ca Mau_ in Vietnam, _Daejeon_ in South Korea, and _Abu Dhabi_ in the UAE are places I have called home, at least for a while.
+_Sai Gon_ and _Ca Mau_ (Vietnam), _Daejeon_ (South Korea), and _Abu Dhabi_ (UAE) are places I have called home, at least for a while.
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.css" crossorigin=""/>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flag-icons@7.2.3/css/flag-icons.min.css" crossorigin=""/>
