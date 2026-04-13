@@ -96,6 +96,9 @@ ninja.data = [{
           section: "News",},{id: "news-vlms-are-biased-has-been-accepted-to-iclr-2026",
           title: 'VLMs are Biased has been accepted to ICLR 2026!',
           description: "",
+          section: "News",},{id: "news-i-received-the-outstanding-ms-thesis-award-from-kaist-for-my-master-s-thesis",
+          title: 'I received the Outstanding MS Thesis Award from KAIST for my Master’s thesis....',
+          description: "",
           section: "News",},{id: "news-vlms-are-biased-is-featured-on-sky-news-watch-the-film-and-read-the-article",
           title: 'VLMs are Biased is featured on Sky News — watch the film and...',
           description: "",
@@ -128,7 +131,7 @@ ninja.data = [{
         title: 'X',
         section: 'Socials',
         handler: () => {
-          window.open("https://twitter.com/an_vo12", "_blank");
+          window.open("https://twitter.com/_vo_an", "_blank");
         },
       },{
         id: 'social-linkedin',
