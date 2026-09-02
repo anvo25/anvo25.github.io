@@ -19,6 +19,24 @@ _styles: >
     font-size: 0.85em;
   }
   .social-sidebar h2 { font-size: 1.4em; margin-bottom: 1rem; }
+  details.vn-coverage > summary {
+    cursor: pointer;
+    color: var(--global-theme-color);
+    font-weight: 500;
+    list-style: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+  }
+  details.vn-coverage > summary::-webkit-details-marker { display: none; }
+  details.vn-coverage > summary::before {
+    content: "\25B8";
+    display: inline-block;
+    transition: transform 0.15s ease;
+  }
+  details.vn-coverage[open] > summary::before { transform: rotate(90deg); }
+  details.vn-coverage > summary:hover { text-decoration: underline; }
+  details.vn-coverage[open] > summary { margin-bottom: 0.75rem; }
   .social-sidebar blockquote, .social-sidebar iframe { margin-bottom: 1.5rem !important; }
   @media (max-width: 1300px) {
     .social-sidebar {
@@ -72,6 +90,9 @@ _styles: >
 
 I had a meaningful and memorable life in Vietnam before going abroad. These are some articles (in Vietnamese) that covered my journey there.
 
+<details class="vn-coverage" markdown="1">
+<summary>Show 11 articles</summary>
+
 - 2024: UIT News – [Recipient of Master's Scholarship at Top Korean Research Institute: 'Choosing UIT was my crucial and unforgettable turning point'](https://en.uit.edu.vn/recipient-masters-scholarship-top-korean-research-institute-choosing-uit-was-my-crucial-and-unforgettable-turning-point)
 - 2024: UIT Cafe – ["Du học có phải là đích đến cuối cùng?"](https://youtu.be/JmWMcSb6FUk?si=UhfQtuW0RTXfO9CE)
 - 2023: Tiền Phong – [Thủ khoa tốt nghiệp toàn diện loại xuất sắc cùng niềm đam mê với khoa học](https://svvn.tienphong.vn/thu-khoa-tot-nghiep-toan-dien-loai-xuat-sac-cung-niem-dam-me-voi-khoa-hoc-post1543034.tpo)
@@ -83,6 +104,8 @@ I had a meaningful and memorable life in Vietnam before going abroad. These are 
 - 2022: Tiền Phong – [Hai sinh viên nhận giải thưởng bài báo xuất sắc tại Hội nghị Quốc tế về CNTT và Truyền thông](https://svvn.tienphong.vn/hai-sinh-vien-nhan-giai-thuong-bai-bao-xuat-sac-tai-hoi-nghi-quoc-te-ve-cntt-va-truyen-thong-post1493044.tpo)
 - 2022: Tuổi Trẻ – [Ứng dụng AI vào giáo dục lịch sử](https://tuoitre.vn/ung-dung-ai-vao-giao-duc-lich-su-20221004093302994.htm)
 - 2018: Đất Mũi – [108 thí sinh tham gia Hội thi Tin học trẻ cấp tỉnh năm 2018](https://baoanhdatmui.vn/108-thi-sinh-tham-gia-hoi-thi-tin-hoc-tre-cap-tinh-nam-2018.html)
+
+</details>
 
 ---
 

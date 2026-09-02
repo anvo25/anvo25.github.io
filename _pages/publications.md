@@ -13,7 +13,7 @@ nav_order: 1
 
 {% include bib_search.liquid %}
 
-<p style="font-size: 0.85rem;">* equal contribution</p>
+<p style="font-size: 0.85rem;">* equal contribution, † equal advising</p>
 
 <div class="publications">
 
