@@ -23,8 +23,8 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/media/";
           },
-        },{id: "nav-personal",
-          title: "personal",
+        },{id: "nav-miscellaneous",
+          title: "miscellaneous",
           description: "",
           section: "Navigation",
           handler: () => {
@@ -104,6 +104,12 @@ ninja.data = [{
           description: "",
           section: "News",},{id: "news-i-am-coming-to-university-of-michigan-this-fall-2026-as-a-computer-science-and-engineering-phd-student-advised-by-rada-mihalcea-it-s-a-dream-come-true",
           title: 'I am coming to University of Michigan this Fall 2026 as a Computer...',
+          description: "",
+          section: "News",},{id: "news-i-will-serve-as-a-reviewer-for-neurips-2026",
+          title: 'I will serve as a reviewer for NeurIPS 2026.',
+          description: "",
+          section: "News",},{id: "news-deep-and-shallow-biases-in-language-models-has-been-accepted-to-emnlp-2026",
+          title: 'Deep and shallow biases in language models has been accepted to EMNLP 2026!...',
           description: "",
           section: "News",},{
         id: 'social-email',
