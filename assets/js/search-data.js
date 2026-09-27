@@ -23,8 +23,8 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/media/";
           },
-        },{id: "nav-miscellaneous",
-          title: "miscellaneous",
+        },{id: "nav-misc",
+          title: "misc",
           description: "",
           section: "Navigation",
           handler: () => {
@@ -108,15 +108,27 @@ ninja.data = [{
           section: "News",},{id: "news-i-will-serve-as-a-reviewer-for-neurips-2026",
           title: 'I will serve as a reviewer for NeurIPS 2026.',
           description: "",
+          section: "News",},{id: "news-i-have-arrived-in-ann-arbor-to-start-my-phd-at-university-of-michigan-a-new-journey-begins",
+          title: 'I have arrived in Ann Arbor to start my PhD at University of...',
+          description: "",
           section: "News",},{id: "news-deep-and-shallow-biases-in-language-models-has-been-accepted-to-emnlp-2026",
           title: 'Deep and shallow biases in language models has been accepted to EMNLP 2026!...',
+          description: "",
+          section: "News",},{id: "news-vlms-are-biased-has-been-used-by-bytedance-to-evaluate-seed-2-0-alibaba-qwen-to-evaluate-qwen3-8-and-moonshot-ai-as-a-source-benchmark-for-perceptionbench",
+          title: 'VLMs are Biased has been used by ByteDance to evaluate Seed 2.0, Alibaba...',
+          description: "",
+          section: "News",},{id: "news-vmmu-has-been-accepted-to-findings-of-aacl-ijcnlp-2026-happy-to-contribute-to-research-on-low-resource-languages",
+          title: 'VMMU has been accepted to Findings of AACL-IJCNLP 2026! Happy to contribute to...',
+          description: "",
+          section: "News",},{id: "news-i-will-attend-emnlp-2026-in-budapest-to-present-deep-and-shallow-biases-in-language-models-happy-to-connect-with-everyone",
+          title: 'I will attend EMNLP 2026 in Budapest to present Deep and shallow biases...',
           description: "",
           section: "News",},{
         id: 'social-email',
         title: 'email',
         section: 'Socials',
         handler: () => {
-          window.open("mailto:%61%6E.%76%6F@%6D%62%7A%75%61%69.%61%63.%61%65", "_blank");
+          window.open("mailto:%76%6F%6B%68%61%6E%68%61%6E%32%35@%67%6D%61%69%6C.%63%6F%6D", "_blank");
         },
       },{
         id: 'social-scholar',
