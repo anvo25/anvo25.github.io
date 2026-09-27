@@ -71,18 +71,23 @@ _styles: >
 
 ## articles & blog posts
 
+- **KAIST School of Computing** [ICLR 2026 paper reveals memorization bias and limitations in counterfactual reasoning in vision-language models](https://cs.kaist.ac.kr/board/view?bbs_id=news&bbs_sn=11754&menu=83) (2026).
 - **Gary Marcus** [GPT-5: Overdue, overhyped and underwhelming](https://garymarcus.substack.com/p/gpt-5-overdue-overhyped-and-underwhelming), cites VLMs are Biased as key evidence for current model limitations.
 - **Hacker News** [Front page](https://news.ycombinator.com/item?id=44169413), community discussion of the VLMBias benchmark.
 - **LinkedIn** [Post by Alex](https://www.linkedin.com/feed/update/urn:li:share:7360208443477045248), highlights [VLMs are Biased](https://vlmsarebiased.github.io) findings on model failures in counterfactual visual reasoning.
-- **Moondream** used examples from [VLMs are Biased](https://vlmsarebiased.github.io) to test the Moondream model in their [2025-06-21 release blog post](https://moondream.ai/blog/moondream-2025-06-21-release).
-
-  <img src="/assets/img/moondream example.png" alt="Moondream using VLMs are Biased examples" style="max-width: 100%; margin-top: 0.5rem; border-radius: 6px;">
 
 ---
 
 ## industry usage
 
-<p><img src="https://www.google.com/s2/favicons?domain=deepmind.com&sz=32" alt="" style="height: 1.2em; vertical-align: middle; margin-right: 4px;"><strong>Google DeepMind</strong> used <a href="https://vlmsarebiased.github.io" target="_blank">VLMs are Biased</a> to evaluate <strong>Gemini 3 Pro</strong>. Check out their <a href="https://blog.google/technology/developers/gemini-3-pro-vision" target="_blank">blog post</a>.</p>
+<ul>
+  <li><img src="https://www.google.com/s2/favicons?domain=kimi.ai&sz=32" alt="" style="height: 1.2em; vertical-align: middle; margin-right: 4px;"><strong>Moonshot AI</strong> used <a href="https://vlmsarebiased.github.io" target="_blank">VLMs are Biased</a> as a source benchmark for developing <a href="https://www.kimi.ai/blog/perception-bench" target="_blank">PerceptionBench</a> (2026).</li>
+  <li><img src="https://www.google.com/s2/favicons?domain=qwen.ai&sz=32" alt="" style="height: 1.2em; vertical-align: middle; margin-right: 4px;"><strong>Alibaba Qwen</strong> used <a href="https://vlmsarebiased.github.io" target="_blank">VLMs are Biased</a> to evaluate <a href="https://qwen.ai/blog?id=qwen3.8" target="_blank">Qwen3.8</a> (2026).</li>
+  <li><img src="https://www.google.com/s2/favicons?domain=seed.bytedance.com&sz=32" alt="" style="height: 1.2em; vertical-align: middle; margin-right: 4px;"><strong>ByteDance</strong> used <a href="https://vlmsarebiased.github.io" target="_blank">VLMs are Biased</a> to evaluate <a href="https://seed.bytedance.com/en/blog/seed-2-0-official-launch" target="_blank">Seed 2.0</a> (2026) and <a href="https://seed.bytedance.com/en/blog/official-release-of-seed1-8-a-generalized-agentic-model" target="_blank">Seed 1.8</a> (2025).</li>
+  <li><img src="https://www.google.com/s2/favicons?domain=deepmind.com&sz=32" alt="" style="height: 1.2em; vertical-align: middle; margin-right: 4px;"><strong>Google DeepMind</strong> used <a href="https://vlmsarebiased.github.io" target="_blank">VLMs are Biased</a> to evaluate <a href="https://blog.google/technology/developers/gemini-3-pro-vision" target="_blank">Gemini 3 Pro</a> (2025).</li>
+  <li><img src="https://www.google.com/s2/favicons?domain=moondream.ai&sz=32" alt="" style="height: 1.2em; vertical-align: middle; margin-right: 4px;"><strong>Moondream</strong> used examples from <a href="https://vlmsarebiased.github.io" target="_blank">VLMs are Biased</a> to demonstrate reduced counting bias through grounded reasoning in their <a href="https://moondream.ai/blog/moondream-2025-06-21-release" target="_blank">2025-06-21 release</a>.
+    <br><img src="/assets/img/moondream example.png" alt="Moondream using VLMs are Biased examples" style="max-width: 100%; margin-top: 0.5rem; border-radius: 6px;"></li>
+</ul>
 
 ---
 

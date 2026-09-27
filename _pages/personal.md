@@ -1,7 +1,7 @@
 ---
 layout: page
 permalink: /personal/
-title: miscellaneous
+title: misc
 nav: true
 nav_order: 6
 ---
@@ -14,10 +14,11 @@ My full Vietnamese name is **Võ Khánh An**. Vietnamese names are written famil
 
 <h2>places i have been</h2>
 
-_Sai Gon_ &amp; _Ca Mau_ <span class="fi fi-vn" role="img" aria-label="Vietnam" title="Vietnam" style="vertical-align: -0.1em; margin-left: 0.15em;"></span>, _Daejeon_ <span class="fi fi-kr" role="img" aria-label="South Korea" title="South Korea" style="vertical-align: -0.1em; margin-left: 0.15em;"></span>, _Abu Dhabi_ <span class="fi fi-ae" role="img" aria-label="United Arab Emirates" title="United Arab Emirates" style="vertical-align: -0.1em; margin-left: 0.15em;"></span>, and _Ann Arbor_ <span class="fi fi-us" role="img" aria-label="United States" title="United States" style="vertical-align: -0.1em; margin-left: 0.15em;"></span> are places I have called <span style="color: var(--global-theme-color); font-weight: 500; white-space: nowrap;">home <i class="fa-solid fa-house-chimney fa-sm"></i></span>, at least for a while.
+_Sai Gon_ &amp; _Ca Mau_ (Vietnam), _Daejeon_ (South Korea), _Abu Dhabi_ (UAE), and _Ann Arbor_ (USA) are places I have called <span style="color: var(--global-theme-color); font-weight: 500; white-space: nowrap;">home <i class="fa-solid fa-house-chimney fa-sm"></i></span>, at least for a while.
+
+I love to travel. So far I have been to 8 different countries: Vietnam, South Korea, Japan, Canada, UAE, Oman, Thailand, and the US. Each place has taught me a lot of lessons.
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.css" crossorigin=""/>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flag-icons@7.2.3/css/flag-icons.min.css" crossorigin=""/>
 <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
 
 <div id="travel-map" style="height: 480px; border-radius: 8px; margin: 1.5rem 0; z-index: 0;"></div>
