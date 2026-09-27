@@ -149,7 +149,7 @@ ninja.data = [{
         title: 'X',
         section: 'Socials',
         handler: () => {
-          window.open("https://twitter.com/_vo_an", "_blank");
+          window.open("https://twitter.com/an_vo12", "_blank");
         },
       },{
         id: 'social-linkedin',
