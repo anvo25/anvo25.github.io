@@ -9,8 +9,8 @@ nav_order: 7
 <!DOCTYPE html>
 <html>
 <head>
-  <meta http-equiv="refresh" content="0; url={{ '/assets/pdf/CV_AnVo.pdf' | relative_url }}">
-  <script>window.location.replace("{{ '/assets/pdf/CV_AnVo.pdf' | relative_url }}");</script>
+  <meta http-equiv="refresh" content="0; url={{ '/assets/pdf/CV_AnVo_2026-11-16.pdf' | relative_url }}">
+  <script>window.location.replace("{{ '/assets/pdf/CV_AnVo_2026-11-16.pdf' | relative_url }}");</script>
 </head>
 <body></body>
 </html>
