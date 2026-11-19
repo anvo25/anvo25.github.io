@@ -16,7 +16,7 @@ My full Vietnamese name is **Võ Khánh An**. Vietnamese names are written famil
 
 _Sai Gon_ &amp; _Ca Mau_ (Vietnam), _Daejeon_ (South Korea), _Abu Dhabi_ (UAE), and _Ann Arbor_ (USA) are places I have called <span style="color: var(--global-theme-color); font-weight: 500; white-space: nowrap;">home <i class="fa-solid fa-house-chimney fa-sm"></i></span>, at least for a while.
 
-I love to travel. So far I have been to 8 different countries: Vietnam, South Korea, Japan, Canada, UAE, Oman, Thailand, and the US. Each place has taught me a lot of lessons.
+I love to travel. So far I have been to 10 different countries: Vietnam, South Korea, Japan, Canada, UAE, Oman, Thailand, the US, Hungary, and Turkey. Each place has taught me a lot of lessons. In October 2026 I set foot in Europe for the first time, for EMNLP in Budapest, with a one-day stop in Istanbul on the way. A trip I will always remember.
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.css" crossorigin=""/>
 <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
@@ -79,7 +79,9 @@ document.addEventListener("DOMContentLoaded", function () {
     { name: "Canada", lat: 49.2827, lng: -123.1207, note: "9 days in Vancouver at ICML." },
     { name: "Oman", lat: 23.5880, lng: 58.3829, note: "Muscat, where desert meets sea and mountainous land." },
     { name: "Thailand", lat: 12.9236, lng: 100.8825, note: "Jomtien beach at Pattaya, a relaxing time." },
-    { name: "United States", lat: 42.2808, lng: -83.7430, note: "PhD at the University of Michigan in Ann Arbor." }
+    { name: "United States", lat: 42.2808, lng: -83.7430, note: "PhD at the University of Michigan in Ann Arbor." },
+    { name: "Hungary", lat: 47.4979, lng: 19.0402, note: "Budapest for EMNLP 2026, my first time in Europe." },
+    { name: "Turkey", lat: 41.0082, lng: 28.9784, note: "One unforgettable day in Istanbul, between two continents." }
   ];
 
   places.forEach(function (p) {
